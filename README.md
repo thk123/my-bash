@@ -22,3 +22,15 @@ if [ -f ~/path/to/alias.sh ]; then
     ~/path/to/alias.sh
 fi
 ```
+
+## Other Tweaks
+
+You can disable bell notification on tab-complete:
+
+https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal
+
+> Disable a terminal tab-completion bell by editing `/etc/inputrc` and add / replace line:
+
+```
+set bell-style none
+```
