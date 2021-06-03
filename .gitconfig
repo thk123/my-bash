@@ -1,0 +1,5 @@
+[alias]
+	br = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(align:50,left) %(color:yellow)%(refname:short)%(color:reset)%(end) %(align:10,left)%(color:red)%(objectname:short)%(color:reset)%(end) %(contents:subject) %(align:10,left)%(authorname) (%(color:green)%(committerdate:relative)%(end)%(color:reset))'
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[advice]
+	detachedHead = false
