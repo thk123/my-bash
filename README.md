@@ -34,3 +34,27 @@ https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal
 ```
 set bell-style none
 ```
+
+## Setting up PowerShell
+
+### Install Windows Terminal
+
+https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
+
+### Install Posh-Git
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm
+```
+
+```
+PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+```
+
+Test it worked:
+
+```
+Import-Module posh-git
+```
+
+Prompt should be changed if inside a git repo. Now put the [profile](Microsoft.PowerShell_profile.ps1) into `$PROFILE` (probably `C:\Users\Thomas\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`)
